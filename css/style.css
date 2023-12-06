@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: #333333;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 80px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #FF7B4F;
+    border-radius: 10px;
+    box-shadow: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff8e69;
+}
+
+.btn:active {
+    background-color: #ff6836;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 30px 30px;
+    max-width: 1040px;
+    width: 100%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 30px;
+    width: 80%;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+h3 {
+    margin-bottom: 30px;
+    width: 80%;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.text {
+    margin-bottom: 30px;
+}
+
+.hero {
+    background-color: #E3FAFF;
+}
+
+.hero__content {
+    position: relative;
+    margin-top: 100px;
+    padding: 50px 30px;
+}
+
+.hero__content::before {
+    position: absolute;
+    content: url(../img/hero_img.svg);
+    top: -30px;
+    right: 50px;
+}
+
+.about__list li {
+    padding-left: 60px;
+    background: url(../img/tick.svg);
+    background-position-y: 25%;
+    background-size: 46px 46px;
+    min-height: 46px;
+    background-repeat: no-repeat;
+}
+
+.about__list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1040px) {
+
+    .hero__content {
+        margin-top: 0;
+    }
+
+    .hero__content::before {
+        content: none;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+
+    .btn {
+        padding: 30px 30px;
+        font-size: 18px;
+    }
+}
